@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const myElement = <div>I Love JSX <div>HaHa</div></div>; // JSX
+const myElement = <div style={{backgroundColor : "red"}}>I Love JSX <div>HaHa</div></div>; // JSX
 const myElement1 = React.createElement('h1', {}, 'I do not use JSX'); // no JSX
-const myElement2 = <div>React is {5 * 5} better with JSX</div>
+const myElement2 = <div style={{color : "blue"}}>React is {5 * 5} better with JSX</div>
 
 let temp_number = 10;
 let temp_text = "nono";
@@ -19,7 +19,7 @@ else {
 }
 
 const myElement3 = <div>{temp_number} === this number? : {temp_text}</div>;
-const myElement4 = <div>{temp_number} === {(temp_number > 10 ? "11" : "22")}</div>;
+const myElement4 = <div>{temp_number} === {(temp_number > 10 ? "o 11" : "no 22")}</div>;
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
