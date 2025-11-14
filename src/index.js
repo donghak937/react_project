@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const myElement = <div style={{backgroundColor : "red"}}>I Love JSX <div>HaHa</div></div>; // JSX
-const myElement1 = React.createElement('h1', {}, 'I do not use JSX'); // no JSX
+const myElement = <div style={{backgroundColor : "red", fontWeight : "bold", fontStyle : "italic"}}>I Love JSX <div>HaHa</div></div>; // JSX
+const myElement1 = React.createElement('h1', {style : {color : "yellow"}}, 'I do not use JSX'); // no JSX
 const myElement2 = <div style={{color : "blue"}}>React is {5 * 5} better with JSX</div>
 
 let temp_number = 10;
@@ -18,14 +18,15 @@ else {
   temp_text = "less than 10";
 }
 
-const myElement3 = <div>{temp_number} === this number? : {temp_text}</div>;
-const myElement4 = <div>{temp_number} === {(temp_number > 10 ? "o 11" : "no 22")}</div>;
+const myElement3 = <div className='sin'>{temp_number} === this number? : {temp_text}</div>;
+const myElement4 = <div className='son'>{temp_number} === {(temp_number > 10 ? "o 11" : "no 22")}</div>;
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
+  <App />
   {myElement}
   {myElement1}
   {myElement2}

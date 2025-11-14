@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sin {
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+.son {
+  color: green;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 15px;
+}
