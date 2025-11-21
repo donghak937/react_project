@@ -1,6 +1,7 @@
 import './App.css';
 import Hello from './Hello';
 import Garage from './Garage';
+import HelloBtn from './HelloBtn';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
 
         <Hello title="OSS!"/>
         <Garage />
+        <HelloBtn />
         <p className='letter'>Just Playing With React!</p>
         <p className='letter'>Scorll Down</p>
       </header>
